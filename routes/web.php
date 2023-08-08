@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
+use App\Http\Controllers\HomePageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomePageController::class,'home_page'])->name('home.page');
+Route::get('terms-conditions',[MainController::class, 'terms_conditions'])->name('terms.conditions.page');
