@@ -40,7 +40,7 @@
                 <div class="row">
                     <div class="col-md-2 d-flex">
                         <div class="logo align-self-center">
-                            <a href="{{ route('home.page') }}"><img class="img-responsive" src="assets/images/logo/logo.png" alt="logo.jpg" /></a>
+                            <a href="{{ route('home.page') }}"><img class="img-responsive" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo.jpg" /></a>
                         </div>
                     </div>
                     <div class="col-md-10 align-self-center header-menu-3">
@@ -92,7 +92,7 @@
                 <!-- Header Logo Start -->
                 <div class="col">
                     <div class="header-logo">
-                        <a href="{{ route('home.page') }}"><img class="img-responsive" style="max-width: 200px;" src="assets/images/logo/logo.png" alt="logo.jpg" /></a>
+                        <a href="{{ route('home.page') }}"><img class="img-responsive" style="max-width: 200px;" src="{{ asset('assets/images/logo/logo.png') }}" alt="logo.jpg" /></a>
                     </div>
                 </div>
                 <!-- Header Logo End -->

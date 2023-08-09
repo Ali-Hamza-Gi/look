@@ -18,6 +18,7 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/',[HomePageController::class,'home_page'])->name('home.page');
 Route::get('shope',[ProductController::class,'shop'])->name('shope.page');
+Route::get('shope/{slug}',[ProductController::class,'single_product'])->name('shope.single.page');
 Route::get('terms-conditions',[MainController::class, 'terms_conditions'])->name('terms.conditions.page');
 Route::get('return-policy',[MainController::class, 'return_policy'])->name('return.policy.page');
 Route::get('privacy-policy',[MainController::class, 'privacy_policy'])->name('privacy.policy.page');

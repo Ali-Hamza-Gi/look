@@ -13,6 +13,12 @@ class ProductController extends Controller
         $products = Product::all();
         return view('shope',compact('products'));
     }
+    public function single_product($slug)
+    {
+        $product = Product::where('slug',$slug)->firstOrFail();
+        $shuffle_products = Product::all()->shuffle();
+        return view('shope-single',compact('product,shuffle_products'));
+    }
     public function product_add_to_cart(Request $request)
     {
         dd($request->all());

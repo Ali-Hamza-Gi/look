@@ -53,7 +53,7 @@
                                                 <article class="list-product p-0 text-center">
                                                     <div class="product-inner">
                                                         <div class="img-block">
-                                                            <a href="single-product.html" class="thumbnail">
+                                                            <a href="{{ route('shope.single.page',$product->slug) }}" class="thumbnail">
                                                                 <img class="first-img" src="{{ asset('assets/product_images/'.$product->image) }}" alt="" style="width: 200px;height:200px" />
                                                             </a>
                                                             <div class="add-to-link">
@@ -68,7 +68,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="product-decs">
-                                                            <h2><a href="single-product.html" class="product-link">{{ strlen($product->title) > 40 ? substr($product->title, 0, 40) . '...' : $product->title }}</a></h2>
+                                                            <h2><a href="{{ route('shope.single.page',$product->slug) }}" class="product-link">{{ strlen($product->title) > 40 ? substr($product->title, 0, 40) . '...' : $product->title }}</a></h2>
                                                             <div class="pricing-meta">
                                                                 <ul>
                                                                     <li class="current-price">${{ $product->price }}</li>
@@ -102,7 +102,7 @@
                                                         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-0">
                                                             <div class="left-img">
                                                                 <div class="img-block">
-                                                                    <a href="single-product.html" class="thumbnail">
+                                                                    <a href="{{ route('shope.single.page',$product->slug) }}" class="thumbnail">
                                                                         <img class="first-img" src="{{ asset('assets/product_images/'.$product->image) }}" alt="" style="width: 200px;height:200px" />
                                                                     </a>
                                                                 </div>
@@ -111,7 +111,7 @@
                                                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p-0">
                                                             <div class="product-desc-wrap">
                                                                 <div class="product-decs">
-                                                                    <h2><a href="single-product.html"
+                                                                    <h2><a href="{{ route('shope.single.page',$product->slug) }}"
                                                                             class="product-link">{{ strlen($product->title) > 40 ? substr($product->title, 0, 40) . '...' : $product->title }}</a></h2>
                                                                     <div class="product-intro-info">
                                                                         <p>
