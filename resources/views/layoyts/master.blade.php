@@ -92,7 +92,7 @@
                 <!-- Header Logo Start -->
                 <div class="col">
                     <div class="header-logo">
-                        <a href="index-2.html"><img class="img-responsive" src="assets/images/logo/logo.png" alt="logo.jpg" /></a>
+                        <a href="{{ route('home.page') }}"><img class="img-responsive" style="max-width: 200px;" src="assets/images/logo/logo.png" alt="logo.jpg" /></a>
                     </div>
                 </div>
                 <!-- Header Logo End -->
@@ -298,117 +298,23 @@
                                 <!-- slider -->
                                 <div class="gallery-top">
                                     <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/8.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/14.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/15.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/11.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/19.jpg"
-                                            alt="">
-                                    </div>
-                                </div>
-                                <div class=" gallery-thumbs">
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/8.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/14.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/15.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/11.jpg"
-                                            alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="assets/images/product-image/19.jpg"
-                                            alt="">
+                                        <img class="img-responsive m-auto product-image" src="" alt="">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="product-details-content quickview-content">
-                                <h2>Originals Kaval Windbr</h2>
-                                <p class="reference">Reference:<span> demo_17</span></p>
-                                <div class="pro-details-rating-wrap">
-                                    <div class="rating-product">
-                                        <i class="ion-android-star"></i>
-                                        <i class="ion-android-star"></i>
-                                        <i class="ion-android-star"></i>
-                                        <i class="ion-android-star"></i>
-                                        <i class="ion-android-star"></i>
-                                    </div>
-                                    <span class="read-review"><a class="reviews" href="#">Read reviews (1)</a></span>
-                                </div>
+                                <h2 class="modal-title"></h2>
                                 <div class="pricing-meta">
                                     <ul>
-                                        <li class="old-price not-cut">€18.90</li>
+                                        <li class="not-cut product-price"></li>
                                     </ul>
                                 </div>
-                                <p class="quickview-para">Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm
-                                    tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis
-                                    nostrud exercitation ullamco</p>
-                                <div class="pro-details-size-color">
-                                    <div class="pro-details-color-wrap">
-                                        <span>Color</span>
-                                        <div class="pro-details-color-content">
-                                            <ul>
-                                                <li class="blue"></li>
-                                                <li class="maroon active"></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="quickview-para product-description"> </p>
                                 <div class="pro-details-quality">
-                                    <div class="cart-plus-minus">
-                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" />
-                                    </div>
                                     <div class="pro-details-cart btn-hover">
                                         <a href="#"> + Add To Cart</a>
-                                    </div>
-                                </div>
-                                <div class="pro-details-wish-com">
-                                    <div class="pro-details-wishlist">
-                                        <a href="wishlist.html"><i class="ion-android-favorite-outline"></i>Add to
-                                            wishlist</a>
-                                    </div>
-                                    <div class="pro-details-compare">
-                                        <a href="compare.html"><i class="ion-ios-shuffle-strong"></i>Add to compare</a>
-                                    </div>
-                                </div>
-                                <div class="pro-details-social-info">
-                                    <span>Share</span>
-                                    <div class="social-info">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><i class="ion-social-facebook"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="ion-social-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="ion-social-google"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><i class="ion-social-instagram"></i></a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -437,6 +343,33 @@
 
     <!-- Main Activation JS -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script>
+    $(document).ready(function() {
+        $(".add-to-curt").click(function(event) {
+            event.preventDefault(); // Prevent the default click behavior
+
+            // Find the nearest form element and submit it
+            $(this).closest("form").submit();
+        });
+    });
+    $(document).ready(function () {
+        // Trigger modal when quick view link is clicked
+        $('.quick_view').click(function (e) {
+            e.preventDefault();
+            var title = $(this).data('title');
+            var image = $(this).data('image');
+            var price = $(this).data('price');
+            var description = $(this).data('description');
+            // Populate modal content with dynamic data
+            $('#exampleModal .modal-title').text(title);
+            $('#exampleModal .modal-body .product-image').attr('src', image);
+            $('#exampleModal .modal-body .product-price').text(price);
+            $('#exampleModal .modal-body .product-description').text(description);
+
+            $('#exampleModal').modal('show');
+        });
+    });
+</script>
 </body>
 
 </html>

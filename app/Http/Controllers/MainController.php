@@ -10,4 +10,19 @@ class MainController extends Controller
     {
         return view('terms-and-conditions');
     }
+    public function return_policy()
+    {
+        return view('return-refund-policy');
+
+    }
+    public function privacy_policy()
+    {
+        return view('privacy-policy');
+
+    }
+    public function contact_us()
+    {
+        return view('contact-us');
+
+    }
 }

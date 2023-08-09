@@ -1,0 +1,21 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="26" width="30" height="24" rx="4.5" fill="#FDF6B4"/>
+<path d="M41.5483 11.3005C41.5483 11.628 41.2827 11.8936 40.9553 11.8936C40.6277 11.8936 40.3623 11.628 40.3623 11.3005C40.3623 10.9731 40.6277 10.7076 40.9553 10.7076C41.2827 10.7076 41.5483 10.9731 41.5483 11.3005Z" stroke="#333333" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40.9553 11.3004L44.1113 13.3333" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.7373 15.0103C47.4687 13.964 47.9 12.7376 47.9846 11.4638C48.0692 10.1899 47.8038 8.91725 47.2172 7.7834C46.6306 6.64954 45.745 5.6977 44.6564 5.03086C43.5678 4.36403 42.3176 4.00759 41.041 4.00012C39.7644 3.99265 38.51 4.33443 37.4137 4.98849C36.3173 5.64254 35.4207 6.58395 34.8209 7.71087C34.221 8.83778 33.9408 10.1073 34.0104 11.382C34.0801 12.6567 34.497 13.8881 35.2161 14.9429" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M43.0349 21.4241H4.62109C2.96424 21.4241 1.62109 22.7672 1.62109 24.4241V52.1741C1.62109 53.8309 2.96424 55.1741 4.62109 55.1741H43.0349C44.6917 55.1741 46.0349 53.8309 46.0349 52.1741V24.4241C46.0349 22.7672 44.6917 21.4241 43.0349 21.4241Z" fill="url(#paint0_linear_2018_161109)"/>
+<path d="M45 28V24C45 22.3431 43.6569 21 42 21H4C2.34315 21 1 22.3431 1 24V28M45 28V52C45 53.6569 43.6569 55 42 55H4C2.34315 55 1 53.6569 1 52L1 28M45 28H1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.3447 24V18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.3447 24V18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="15" y="44.4348" width="2.89655" height="2.93479" rx="1.44828" fill="#333333"/>
+<rect x="31" y="34.6086" width="2.89655" height="2.93478" rx="1.44828" fill="#333333"/>
+<rect x="30.793" y="44.4348" width="2.89655" height="2.93479" rx="1.44828" fill="#333333"/>
+<rect x="23" y="35" width="2.89655" height="2.93478" rx="1.44828" fill="#333333"/>
+<rect x="22.8965" y="44.4348" width="2.89655" height="2.93479" rx="1.44827" fill="#333333"/>
+<defs>
+<linearGradient id="paint0_linear_2018_161109" x1="22.2965" y1="55.9776" x2="22.2965" y2="47.1384" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FDF6B4"/>
+<stop offset="1" stop-color="#FDF6B4" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

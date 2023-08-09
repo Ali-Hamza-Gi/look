@@ -3,18 +3,18 @@
         <a href="{{ route('home.page') }}">Home</a>
     </li>
     <li>
-        <a href="#">Shop</a>
+        <a href="{{ route('shope.page') }}">Shop</a>
     </li>
     <li>
         <a href="{{ route('terms.conditions.page') }}">Terms Conditions</a>
     </li>
     <li>
-        <a href="contact.html">Return Policy</a>
+        <a href="{{ route('return.policy.page') }}">Return Policy</a>
     </li>
     <li>
-        <a href="contact.html">Privacy Policy</a>
+        <a href="{{ route('privacy.policy.page') }}">Privacy Policy</a>
     </li>
     <li>
-        <a href="contact.html">contact Us</a>
+        <a href="{{ route('contact.us.page') }}">contact Us</a>
     </li>
 </ul>
