@@ -15,13 +15,13 @@ class ProductController extends Controller
     }
     public function single_product($slug)
     {
-        $product = Product::where('slug',$slug)->firstOrFail();
-        $shuffle_products = Product::all()->shuffle();
-        return view('shope-single',compact('product,shuffle_products'));
+        $data['product'] = Product::where('slug',$slug)->firstOrFail();
+        $data['shuffle_products'] = Product::all()->shuffle();
+        return view('shope-single',$data);
     }
     public function product_add_to_cart(Request $request)
     {
-        dd($request->all());
+        return redirect()->back()->with('success', 'Product added to cart successfully');
         $product = Product::find($request->id);
         $cart = Session::get('cart');
         $cart[$product->id] = [

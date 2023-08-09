@@ -61,7 +61,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h2 class="section-heading">12 Other Products In The Same Category:</h2>
+                        <h2 class="section-heading">You May like : </h2>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,7 @@
                             <div class="product-inner">
                                 <div class="img-block">
                                     <a href="{{ route('shope.single.page',$product->slug) }}" class="thumbnail">
-                                        <img class="first-img" src="{{ asset('assets/product_images/'.$product->image) }}" alt="" style="width: 200px;height:200px" />
+                                        <img class="first-img" src="{{ asset('assets/product_images/'.$product->image) }}" alt=""/>
                                     </a>
                                     <div class="add-to-link">
                                         <ul>
